@@ -30,8 +30,6 @@ class NoiseModelSimulator:
         # self.backend_name = 'realbackend'
         
         self.n_qubits = max([self.circuit.find_bit(qubit).index for qubit in self.dag.qubits]) + 1
-        # service = QiskitRuntimeService(channel="ibm_cloud", token="vaC7YYyTNHREDzJ981l0vA_YWG0L4eDVl8-Tt80indxm", instance="crn:v1:bluemix:public:quantum-computing:us-east:a/4a42487c7e16401abf6df3331c283898:f63eb573-272f-449e-a09f-dbfae3c55a7a::")
-        # self.backend = service.backend("ibm_osaka")
         self.backend = FakeManilaV2()
 
     # get the input and output edges of a subdag
