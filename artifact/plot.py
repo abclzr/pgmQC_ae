@@ -469,11 +469,11 @@ if __name__ == '__main__':
     # plot_pruned_HWEA_energy("experiments/pruned_ansatz_results_noise.pkl")
     # plot_pruned_HWEA_expressivity_trainability()
     for d in [1, 2, 4]:
-        plot_box_chart('HWEA_RYRZ_CZ', 8, d, 5, [10000, 20000], 1)
+        plot_box_chart('HWEA_RYRZ_CZ', 8, d, 5, [10000, 20000], 100)
     
-    plot_box_chart('3local', 8, 1, 5, [320000, 640000], 1)    
-    plot_box_chart_qnn('iris', 4, 2, 3, [320000], 1)
+    plot_box_chart('3local', 8, 1, 5, [320000, 640000], 100)
+    plot_box_chart_qnn('iris', 4, 2, 3, [320000], 10)
     
-    plot_box_chart_with_classical_shadows('HWEA_RYRZ_CZ', 8, 2, 5, [10000], 1)
-    plot_box_chart_with_classical_shadows('3local', 8, 1, 5, [10000], 1)
+    plot_box_chart_with_classical_shadows('HWEA_RYRZ_CZ', 8, 2, 5, [10000], 10)
+    plot_box_chart_with_classical_shadows('3local', 8, 1, 5, [10000], 10)
     

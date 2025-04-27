@@ -13,3 +13,6 @@ Pillow==10.3.0
 pylatexenc==2.10
 matplotlib==3.8.4
 seaborn
+optuna
+kahypar
+cuquantum==24.3.0.post1
